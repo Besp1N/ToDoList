@@ -35,35 +35,35 @@ namespace WindowsFormsApp1
 
         private void btnInput_Click(object sender, EventArgs e)
         {
-            if (lbl1.Text == string.Empty)
+            if (lbl1.Text == string.Empty && tbToDo.Text != string.Empty)
             {
                 check();
                 counter++;
                 lbl1.Text = tbToDo.Text;
                 list.Add(lbl1.Text);
-                
+
                 tbToDo.Text = string.Empty;
             }
-            else if (lbl2.Text == string.Empty)
+            else if (lbl2.Text == string.Empty && tbToDo.Text != string.Empty)
             {
                 check();
                 counter++;
-                lbl2.Text = tbToDo.Text; 
+                lbl2.Text = tbToDo.Text;
                 list.Add(lbl2.Text);
                 tbToDo.Text = string.Empty;
 
             }
-            else if (lbl3.Text == string.Empty) 
+            else if (lbl3.Text == string.Empty && tbToDo.Text != string.Empty)
             {
                 check();
                 counter++;
                 lbl3.Text = tbToDo.Text;
-                list.Add (lbl3.Text);
-              
+                list.Add(lbl3.Text);
+
                 tbToDo.Text = string.Empty;
 
             }
-            else
+            else if (lbl4.Text == string.Empty && tbToDo.Text != string.Empty)
             {
                 check();
                 counter++;
